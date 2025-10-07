@@ -1,0 +1,19 @@
+import os, re
+import pandas as pd
+
+folder = "data/images"
+records = []
+
+for fname in os.listdir(folder):
+    if not fname.lower().endswith(('.jpg', '.jpeg', '.png')):
+        continue
+    
+    # Extract numeric value from the filename (e.g., "13.5" in "13.5_001.jpg")
+    match = re.search(r"(\d+(\.\d+)?)", fname)
+    if match:
+        hgb = float(match.group(1))
+        records.append({"image_id": fname, "hgb": hgb})
+
+df = pd.DataFrame(records)
+df.to_csv("labels_extracted.csv", index=False)
+print(df.head())
