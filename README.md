@@ -5,7 +5,9 @@ meta.csv, inference.py, dataset.
 
 *advised to adjust the epochs count from (50 - 100) in order to increase the accuracy of the model. (line 435)
 *epoch - is one complete pass through the entire training dataset by a learning algorithm
-run the file using the format "python3 inference.py --images <--path--> --meta meta.csv --out preds.csv"
+
+
+run the file using the command with the format "python3 inference.py --images <--path--> --meta meta.csv --out preds.csv" to the terminal on your IDE
 
 
 How it works : 
