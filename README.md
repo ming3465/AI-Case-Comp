@@ -16,4 +16,4 @@ How it works :
 3. Please adjust the epoch (optional but recommended)
 4. takes into account lighting, skintone.
 5. evaluate the HgB based on the data that is available, and prints out the HgB and the confidence rate to the terminal
-6. it will be outputtted into preds.csv as per the command line. (here, preds.csv is not included in this github, since it will create on its own if the directory isn't present).
+6. it will be outputtted into preds.csv as per the command line. (here, preds.csv is not included in this github, since it will create on its own if the directory isn't present -> else it would just override the content).
